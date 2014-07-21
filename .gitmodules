@@ -1,0 +1,3 @@
+[submodule "ansible/roles/heka"]
+	path = ansible/roles/heka
+	url = ssh://git@git.silpion.de:2222/~kusch/ansible-heka.git
