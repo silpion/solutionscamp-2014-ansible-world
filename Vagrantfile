@@ -5,7 +5,7 @@
 VAGRANT_API_VERSION = '2'
 Vagrant.configure(VAGRANT_API_VERSION) do |config|
 
-  config.vm.box = 'chef/centos-6.5'
+  config.vm.box = 'hashicorp/precise64'
 
   config.vm.define :hekad do |d|
 
