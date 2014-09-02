@@ -3,4 +3,4 @@
   sudo: yes
   sudo_user: root
   roles:
-    - { role: solutionscamp }
+    - { role: heka }
