@@ -5,21 +5,19 @@
 VAGRANT_API_VERSION = '2'
 Vagrant.configure(VAGRANT_API_VERSION) do |config|
 
-  config.vm.box = 'hashicorp/precise64'
+  config.vm.box = 'ubuntu/trusty64'
 
-  config.vm.define :hekad do |d|
+  config.vm.define :solutionscamp do |d|
 
-    d.vm.hostname = 'hekad'
+    d.vm.hostname = 'solutionscamp'
     d.vm.synced_folder '.', '/vagrant', id: 'vagrant-root', disabled: true
-    [ 4352, 8080 ].each do |port|
-      d.vm.network 'forwarded_port', host: port, guest: port
-    end
+    d.vm.network :forwarded_port, :host => 4352, :guest => 4352
 
     d.vm.provision :ansible do |ansible|
       ansible.playbook = 'ansible/playbook.yml'
       ansible.tags = ENV['ANSIBLE_TAGS']
       ansible.groups = {
-        'vagrant' => ['hekad']
+        'vagrant' => ['solutionscamp']
       }
       ansible.limit = 'vagrant'
 
@@ -31,7 +29,7 @@ Vagrant.configure(VAGRANT_API_VERSION) do |config|
 
     d.vm.provider :virtualbox do |v|
       v.customize 'pre-boot', ['modifyvm', :id, '--nictype1', 'virtio']
-      v.customize [ 'modifyvm', :id, '--name', 'hekad', '--memory', '512', '--cpus', '1' ]
+      v.customize [ 'modifyvm', :id, '--name', 'solutionscamp', '--memory', '512', '--cpus', '1' ]
     end
 
   end
