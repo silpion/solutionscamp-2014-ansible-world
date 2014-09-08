@@ -11,14 +11,9 @@ Ansible is a young system to automate infrastructure based on the
 It features a low learning curve to get results quickly, is extremely
 flexible and may get mis-used as *better shell scripting solution*.
 
-
 Ansible does require SSH infrastructure only which makes it ideal to
 automate distributable projects without forcing users to install
 additional software/services.
-
-
-When things are flexible there's a need to define some rules how to
-work with such a tool, like a style guide or project integration.
 
 
 One reason to decide for Ansible is the low learing curve, the target
