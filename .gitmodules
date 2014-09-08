@@ -1,12 +1,12 @@
 [submodule "ansible/roles/heka"]
 	path = ansible/roles/heka
-	url = ssh://git@git.silpion.de:2222/~kusch/ansible-heka.git
+	url = https://github.com/silpion/ansible-heka.git
 [submodule "ansible/roles/silpion"]
 	path = ansible/roles/silpion
-	url = ssh://git@git.silpion.de:2222/isar/ansible-silpion.git
+	url = https://github.com/silpion/ansible-silpion.git
 [submodule "ansible/roles/etckeeper"]
 	path = ansible/roles/etckeeper
-	url = ssh://git@git.silpion.de:2222/isar/ansible-etckeeper.git
+	url = https://github.com/silpion/ansible-etckeeper.git
 [submodule "ansible/roles/linuxdash"]
 	path = ansible/roles/linuxdash
-	url = ssh://git@git.silpion.de:2222/isar/ansible-linuxdash.git
+	url = https://github.com/silpion/ansible-linuxdash.git
