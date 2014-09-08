@@ -1,0 +1,3 @@
+/*function centerSlides(slides) {
+  true;
+}*/

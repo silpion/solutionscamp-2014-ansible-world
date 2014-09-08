@@ -1,0 +1,73 @@
+/*@font-face {
+}*/
+
+.command h3 {
+  color: #98BF0C;
+  padding: 3px;
+  font-size: 20px;
+  font-color: #5F5F5F;
+}
+
+.command h2 {
+  color: #98BF0C;
+  padding: 3px;
+  font-size: 24px;
+  font-color: #5F5F5F;
+}
+
+.command h1 {
+  background-color: #98BF0C;
+  color: #FFFFFF;
+  padding: 3px;
+  font-size: 28px;
+  font-color: #5F5F5F;
+}
+
+
+// Setup headlines when using "subsection" slide
+.subsection h1 {
+  background-color: #98BF0C;
+  padding: 3px;
+  font-size: 28px;
+  font-color: #5F5F5F;
+}
+
+.subsection h2 {
+  color: #98BF0C;
+  padding: 3px;
+  font-size: 24px;
+  font-color: #5F5F5F;
+}
+
+.subsection h3 {
+  color: #98BF0C;
+  padding: 3px;
+  font-size: 20px;
+  font-color: #5F5F5F;
+}
+
+/*
+.slide * {
+  font-size: 14px;
+}
+*/
+
+.content {
+  margin: 0 !important;
+}
+
+.bullets > ul > li {
+  text-align: left;
+  list-style: none outside none;
+}
+
+.smbullets > ul > li {
+  text-align: left;
+  list-style: none outside none;
+}
+
+// Global settings
+h3, h2, h1 {
+  color: #98BF0C;
+  font-color: #5F5F5F;
+}

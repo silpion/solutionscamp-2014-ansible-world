@@ -1,0 +1,13 @@
+{
+  "name": "solutionscamp-2014: An Ansible world",
+  "description": "Infrastructure automation - based on Project automation - with Ansible - and TDD",
+  "author": "Mark Kusch <mark.kusch@silpion.de>",
+  "pause_msg": "<!-- BREAK -->",
+  "markdown": "kramdown",
+  "kramdown": {
+    "space_after_headers": true
+  },
+  "sections": [
+    {"section":"kraMdown"}
+  ]
+}

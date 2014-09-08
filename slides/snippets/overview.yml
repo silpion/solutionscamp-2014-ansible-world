@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: false
+  vars:
+    - topics:
+      - "Infrastructure automation vs project automation"
+      - "Ansible"
+      - "Test driven automation"
+      - "Infrastructure automation based on project automation"
+  tasks:
+    - name: Describe this talk
+      with_items: topics
+      debug: msg={{ item }}
