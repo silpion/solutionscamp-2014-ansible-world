@@ -11,7 +11,9 @@ Vagrant.configure(VAGRANT_API_VERSION) do |config|
 
     d.vm.hostname = 'solutionscamp'
     d.vm.synced_folder '.', '/vagrant', id: 'vagrant-root', disabled: true
-    d.vm.network :forwarded_port, :host => 4352, :guest => 4352
+    %w{ 4352 8088 }.each do |port|
+      d.vm.network :forwarded_port, :host => port, :guest => port
+    end
 
     d.vm.provision :ansible do |ansible|
       ansible.playbook = 'ansible/playbook.yml'
