@@ -7,3 +7,6 @@
 [submodule "ansible/roles/etckeeper"]
 	path = ansible/roles/etckeeper
 	url = ssh://git@git.silpion.de:2222/isar/ansible-etckeeper.git
+[submodule "ansible/roles/linuxdash"]
+	path = ansible/roles/linuxdash
+	url = ssh://git@git.silpion.de:2222/isar/ansible-linuxdash.git

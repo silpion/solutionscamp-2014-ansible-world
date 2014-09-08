@@ -6,3 +6,4 @@
     - { role: silpion }
     - { role: etckeeper }
     - { role: heka }
+    - { role: linuxdash }
