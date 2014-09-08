@@ -4,3 +4,6 @@
 [submodule "ansible/roles/silpion"]
 	path = ansible/roles/silpion
 	url = ssh://git@git.silpion.de:2222/isar/ansible-silpion.git
+[submodule "ansible/roles/etckeeper"]
+	path = ansible/roles/etckeeper
+	url = ssh://git@git.silpion.de:2222/isar/ansible-etckeeper.git
