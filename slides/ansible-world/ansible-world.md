@@ -1,7 +1,6 @@
-<!SLIDE[bg=silpion-logo.png]>
+<!SLIDE title>
 
-![Silpion IT Solutions GmbH](silpion.png)
-
+<!-- -->
 
 <!SLIDE command commandline small>
 

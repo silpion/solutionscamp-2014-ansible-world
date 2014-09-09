@@ -8,6 +8,8 @@
     "space_after_headers": true
   },
   "sections": [
-    {"section":"kraMdown"}
+    {"section":"ansible-world"},
+    {"section":"ansible-tdd"},
+    {"section":"ansible-project"}
   ]
 }
