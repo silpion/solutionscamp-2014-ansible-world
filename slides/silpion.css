@@ -90,7 +90,7 @@ div {
 }
 
 
-a:link {
+a:link, a:visited {
   text-decoration: none;
   color: #98BF0C;
 }

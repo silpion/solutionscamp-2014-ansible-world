@@ -2,11 +2,10 @@
 
 # Ansible - Test-driven development
 
-## Components
+## Required Components
 
 * [Ruby](https://www.ruby-lang.org/en)
     * [Bundler](http://bundler.io)
-    * [Serverspec](http://serverspec.org)
 * [Docker](https://docker.io) \|\| [Vagrant](https://www.vagrantup.com)
 * ([ansible-tdd-generator](https://github.com/silpion/ansible-tdd-generator))
 
@@ -41,11 +40,12 @@
     * all necessary files to start writing integration tests
     * Docker and Vagrant environments for a single role
 * Targets...
-    * working environments at Silpion
+    * working environments at Silpion (right now)
+        * including some limitations in terms of flexibility
         * Role directories are called *ansible-ROLENAME*
 * Requires...
-    * some love for more customization
-    * flexibility to add intgration test infrastructure to projects
+    * some love for more customization/flexibility
+    * support to add intgration test infrastructure to projects
 
 <!-- -->
 
@@ -137,6 +137,36 @@
     $ $EDITOR spec/default/foobar_spec.rb
     $ # code
     $ rake provision
+    $ rake spec
+
+
+
+<!SLIDE command commandline bullets small>
+
+# Ansible - Test-driven development
+
+## This project
+
+* Contains...
+    * Roles with integration testing enabled
+    * Integration testing for the whole project
+    * These slides...
+* Uses ports...
+    * 4352
+    * 8088
+
+<!-- -->
+
+    $ git clone --recursive https://github.com/silpion/solutionscamp-2014-ansible-world
+    $ cd solutionscamp-2014-ansible-world
+    $ rake provision
+
+* Provides services...
+    * [Linuxdash](http://localhost:8088)
+    * [Heka Dashboard](http://localhost:4352)
+
+<!-- -->
+
     $ rake spec
 
 
