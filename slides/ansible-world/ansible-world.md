@@ -49,12 +49,12 @@
       gather_facts: false
       vars:
         - topics:
-          - "Infrastructure automation vs project automation"
+          - "Requirements"
           - "Ansible"
           - "Ansible - Test Driven"
-          - "Ansible - Project automation"
+          - "Ansible - Infrastructure vs Project"
       tasks:
-        - name: Describe this talk
+        - name: Describe this session
           with_items: topics
           debug: msg="{{ item }}"
 
@@ -94,58 +94,9 @@
 
 
 
-<!SLIDE>
+<!SLIDE blank>
 
 This Page Intentionally Left Blank.
-
-
-
-<!SLIDE command bullets small>
-
-# Infrastructure automation vs Project automation
-
-## Infrastructure automation
-
-* Issues (e.g.)
-    * Huge scope
-        * Required knowledge about the complete infrastructure
-        * Required planning for the complete infrastructure
-        * Required time to implement *everything*
-    * Risk
-        * One change to rule them all
-    * Resources
-        * Number of projects?
-        * Number of developers?
-        * Number of system engineers?
-        * Number of operators?
-    * Processes
-        * Not really management compatible
-    * Priorities
-        * Will *anything* get **really** done?
-    * and
-    * so
-    * on
-* Anyway better than managing things manualy!
-
-
-
-<!SLIDE command bullets small>
-
-# Infrastructure automation vs Project automation
-
-## Project automation
-
-* Scope?
-    * It's about a project, not an infrastructure
-* Risk?
-    * One change to rule - eeh - *one* project
-* Resources?
-    * Time for **DevOps**
-* Processes?
-    * Perfectly fit in development processes
-        * e.g. Scrum or Kanban
-* Priorities?
-    * Managable in development processes
 
 
 

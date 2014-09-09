@@ -4,11 +4,11 @@
   gather_facts: false
   vars:
     - topics:
-      - "Infrastructure automation vs project automation"
+      - "Requirements"
       - "Ansible"
       - "Ansible - Test Driven"
-      - "Ansible - Project automation"
+      - "Ansible - Infrastructure vs Project"
   tasks:
-    - name: Describe this talk
+    - name: Describe this session
       with_items: topics
       debug: msg="{{ item }}"

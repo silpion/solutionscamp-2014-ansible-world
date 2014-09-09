@@ -108,3 +108,10 @@ a:hover {
   background-position: center center;
   background-size: 90%;
 }
+
+
+/* this page intentionally left blank */
+.blank {
+  background-color: #FFFFFF;
+  background-image: none;
+}
