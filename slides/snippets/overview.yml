@@ -6,9 +6,9 @@
     - topics:
       - "Infrastructure automation vs project automation"
       - "Ansible"
-      - "Test driven automation"
-      - "Infrastructure automation based on project automation"
+      - "Ansible - Test Driven"
+      - "Ansible - Project automation"
   tasks:
     - name: Describe this talk
       with_items: topics
-      debug: msg={{ item }}
+      debug: msg="{{ item }}"

@@ -62,7 +62,7 @@
 }
 
 
-/* "bullets" and "smbullets" slide list points */
+/* "bullets", "smbullets" slide list points */
 .bullets > ul > li {
   text-align: left;
   list-style: none outside none;
@@ -72,6 +72,8 @@
   text-align: left;
   list-style: none outside none;
 }
+
+
 
 
 

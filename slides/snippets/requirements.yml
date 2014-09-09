@@ -1,0 +1,24 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: true
+  vars:
+    - requirements:
+      - name: git
+        url: http://git-scm.com
+      - name: python2
+        url: https://python.org
+      - name: ansible
+        url: https://ansible.com
+      - name: ruby
+        url: https://www.ruby-lang.org/en
+      - name: serverspec
+        url: http://serverspec.org
+      - name: docker
+        url: https://docker.io
+      - name: vagrant
+        url: https://www.vagrantup.com
+  tasks:
+    - name: Install requirements
+      with_items: requirements
+      action: "{{ ansible_pkg_mgr }} state=installed name={{ item.name }}"

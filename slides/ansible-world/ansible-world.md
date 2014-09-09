@@ -36,7 +36,6 @@
 
 
 
-
 <!SLIDE command commandline small>
 
 # Ansible world
@@ -51,13 +50,53 @@
       vars:
         - topics:
           - "Infrastructure automation vs project automation"
-          - "Infrastructure automation based on project automation"
           - "Ansible"
           - "Ansible - Test Driven"
+          - "Ansible - Project automation"
       tasks:
         - name: Describe this talk
           with_items: topics
-          debug: msg={{ item }}
+          debug: msg="{{ item }}"
+
+
+
+<!SLIDE command commandline small>
+
+# Ansible world
+
+## Requirements
+
+    $ cat requirements.yml
+    ---
+    - hosts: localhost
+      connection: local
+      gather_facts: true
+      vars:
+        - requirements:
+          - name: git
+            url: http://git-scm.com
+          - name: python2
+            url: https://python.org
+          - name: ansible
+            url: https://ansible.com
+          - name: ruby
+            url: https://www.ruby-lang.org/en
+          - name: serverspec
+            url: http://serverspec.org
+          - name: docker
+            url: https://docker.io
+          - name: vagrant
+            url: https://www.vagrantup.com
+      tasks:
+        - name: Install requirements
+          with_items: requirements
+          action: "{{ ansible_pkg_mgr }} state=installed name={{ item.name }}"
+
+
+
+<!SLIDE>
+
+This Page Intentionally Left Blank.
 
 
 
@@ -65,7 +104,7 @@
 
 # Infrastructure automation vs Project automation
 
-## Infrastructure
+## Infrastructure automation
 
 * Issues (e.g.)
     * Huge scope
@@ -94,7 +133,7 @@
 
 # Infrastructure automation vs Project automation
 
-## Project
+## Project automation
 
 * Scope?
     * It's about a project, not an infrastructure
@@ -114,9 +153,10 @@
 
 # Ansible
 
-* *Infrastructure in data* paradigm
+* *Infrastructure in data*
 * Written in [Python](http://python.org)(2)
 * Uses [YAML](http://yaml.org) as description language
+    * No additional DSL to learn
 * No infrastructure requirements (except for SSH)
 * Generates Python code
     * Copies generated code to managed node through SSH
@@ -131,48 +171,16 @@
 
 ## Glossary
 
-* roles
+* *roles*
     * Collection of tasks and default configuration data
         * chef := cookbook
         * puppet := manifest
-* playbook
-    * Configure roles for a set of nodes
-* inventory
+* *playbook*
+    * Assemble roles for a set of nodes
+* *inventory*
     * Heart of Ansible
         * Maintain nodes to manage
-        * Maintain variables to configure roles for nodes
-
-
-
-<!SLIDE command bullets small>
-
-# Test driven automation
-
-## Components
-
-* [Ruby](https://www.ruby-lang.org/en)
-    * [Serverspec](http://serverspec.org)
-* [Docker](https://docker.io) \|\| [Vagrant](https://www.vagrantup.com)
-* [ansible-tdd-generator](https://github.com/silpion/ansible-tdd-generator)
-
-
-<!SLIDE command bullets small>
-
-# Test driven automation
-
-
-
-
-
-<!SLIDE command bullets small>
-
-# Infrastructure automation based on project automation
-
-## Git
-
-* Maintain different Git repositories
-    * One repository per role
-    * Two repositories per project
+        * Maintain configuration data to configure roles for nodes
 
 
 <!-- vim: set nofen sw=4 ts=4 et: -->
