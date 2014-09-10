@@ -53,6 +53,7 @@
           - "Ansible"
           - "Ansible - Test Driven"
           - "Ansible - Infrastructure vs Project"
+          - "Ansible - The foo project"
       tasks:
         - name: Describe this session
           with_items: topics

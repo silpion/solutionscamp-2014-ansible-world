@@ -10,6 +10,7 @@
   "sections": [
     {"section":"ansible-world"},
     {"section":"ansible-tdd"},
-    {"section":"ansible-project"}
+    {"section":"ansible-project"},
+    {"section":"ansible-foo"}
   ]
 }
