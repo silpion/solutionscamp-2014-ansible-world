@@ -49,7 +49,7 @@
 
 <!-- -->
 
-    $ git clone https://github.com/silpion/ansible-tdd-generator
+    $ git clone https://github.com/silpion/ansible-tdd-generator.git
     Cloning into 'ansible-tdd-generator'...
     remote: Counting objects: 75, done.
     remote: Total 75 (delta 0), reused 0 (delta 0)
@@ -157,7 +157,7 @@
 
 <!-- -->
 
-    $ git clone --recursive https://github.com/silpion/solutionscamp-2014-ansible-world
+    $ git clone --recursive https://github.com/silpion/solutionscamp-2014-ansible-world.git
     $ cd solutionscamp-2014-ansible-world
     $ rake provision
 
