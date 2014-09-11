@@ -2,6 +2,8 @@
 - hosts: all
   sudo: yes
   sudo_user: root
+  vars:
+    - ansible_data_path: /tmp
   roles:
     - { role: silpion }
     - { role: heka }
