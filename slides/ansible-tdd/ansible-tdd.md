@@ -11,7 +11,7 @@
 
 
 
-<!SLIDE command commandline small>
+<!SLIDE command commandline bullets small>
 
 # Ansible - Test-driven development
 

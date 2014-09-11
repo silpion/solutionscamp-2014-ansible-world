@@ -46,4 +46,61 @@
     * Managable in development processes
 
 
+
+<!SLIDE command bullets small>
+
+# Infrastructure vs Project
+
+## Project
+
+### Git Repositories
+
+* **Code** repository
+* **Ansible** repository
+* **Role** repositories
+* **Project** repository
+
+### Git Submodules
+
+* **ansible/** submodules **Roles**
+* **code/** submodules **ansible/**
+* **project/** submodules **ansible/**
+
+
+
+<!SLIDE command bullets small>
+
+# Infrastructure vs Project
+
+## Project
+
+### Git Repositories
+
+![Code repository](/file/assets/code-repository.png)
+
+
+
+<!SLIDE command bullets small>
+
+# Infrastructure vs Project
+
+## Project
+
+### Git Repositories
+
+![Ansible repository](/file/assets/ansible-repository.png)
+
+
+
+<!SLIDE command bullets small>
+
+# Infrastructure vs Project
+
+## Project
+
+### Git Repositories
+
+![Project repository](/file/assets/project-repository.png)
+
+
 <!-- vim: set nofen ts=4 sw=4 et: -->
