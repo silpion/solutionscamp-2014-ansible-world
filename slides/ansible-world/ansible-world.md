@@ -17,6 +17,7 @@
         - presenter:
             name: Mark Kusch
             mail: kraM@silpion.de
+            notes: "I have no idea what I'm doing"
       tasks:
         - name: Tell the world who I am
           debug: msg="I am {{ presenter.name }} <{{ presenter.mail }}>"
