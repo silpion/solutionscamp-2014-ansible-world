@@ -103,4 +103,16 @@
 ![Project repository](/file/assets/project-repository.png)
 
 
+
+<!SLIDE command bullets small>
+
+# Infrastructure vs Project
+
+## Project
+
+### Git Repositories
+
+![The complete project](/file/assets/project.png)
+
+
 <!-- vim: set nofen ts=4 sw=4 et: -->
