@@ -17,7 +17,7 @@
         - presenter:
             name: Mark Kusch
             mail: kraM@silpion.de
-            notes: "I have no idea what I'm doing"
+            notes: I have no idea what I am doing
       tasks:
         - name: Tell the world who I am
           debug: msg="I am {{ presenter.name }} <{{ presenter.mail }}>"
@@ -53,8 +53,7 @@
           - "Requirements"
           - "Ansible"
           - "Ansible - Test Driven"
-          - "Ansible - Infrastructure vs Project"
-          - "Ansible - The foo project"
+          - "Ansible - Project automation"
       tasks:
         - name: Describe this session
           with_items: topics
@@ -83,8 +82,6 @@
             url: https://ansible.com
           - name: ruby
             url: https://www.ruby-lang.org/en
-          - name: serverspec
-            url: http://serverspec.org
           - name: docker
             url: https://docker.io
           - name: vagrant
@@ -93,6 +90,27 @@
         - name: Install requirements
           with_items: requirements
           action: "{{ ansible_pkg_mgr }} state=installed name={{ item.name }}"
+
+
+
+<!SLIDE command commandline bullets small>
+
+# Ansible world
+
+## Requirements
+
+* Secure umask (0077)
+* (Docker daemon running)
+    * (Ability to run docker commands as user)
+* Ansible configured to use Python 2
+    * /etc/ansible/hosts
+        * e.g. *ansible_python_interpreter*=/usr/bin/python2
+* (Passwordless sudo)
+
+<!-- -->
+
+    $ cat /etc/ansible/hosts
+    localhost connection=local ansible_python_interpreter=/usr/bin/python2
 
 
 

@@ -45,7 +45,7 @@
         * Role directories are called *ansible-ROLENAME*
 * Requires...
     * some love for more customization/flexibility
-    * support to add intgration test infrastructure to projects
+    * support to add integration test infrastructure to projects
 
 <!-- -->
 
@@ -135,7 +135,7 @@
 ## Workflow
 
     $ $EDITOR spec/default/foobar_spec.rb
-    $ # code
+    $ $EDITOR tasks/main.yml
     $ rake provision
     $ rake spec
 

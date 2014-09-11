@@ -12,8 +12,6 @@
         url: https://ansible.com
       - name: ruby
         url: https://www.ruby-lang.org/en
-      - name: serverspec
-        url: http://serverspec.org
       - name: docker
         url: https://docker.io
       - name: vagrant

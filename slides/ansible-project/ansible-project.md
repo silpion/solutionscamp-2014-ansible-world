@@ -1,6 +1,6 @@
 <!SLIDE command bullets small>
 
-# Infrastructure vs Project
+# Ansible - Project automation
 
 ## Infrastructure
 
@@ -20,16 +20,15 @@
         * Not really management compatible
     * Priorities
         * Will *anything* get **really** done?
-    * and
-    * so
-    * on
-* Anyway better than managing things manualy!
+    * ... and
+    * ... so
+    * ... on
 
 
 
 <!SLIDE command bullets small>
 
-# Infrastructure vs Project
+# Ansible - Project automation
 
 ## Project
 
@@ -49,18 +48,16 @@
 
 <!SLIDE command bullets small>
 
-# Infrastructure vs Project
+# Ansible - Project automation
 
-## Project
-
-### Git Repositories
+## Git Repositories
 
 * **Code** repository
 * **Ansible** repository
 * **Role** repositories
 * **Project** repository
 
-### Git Submodules
+## Git Submodules
 
 * **ansible/** submodules **Roles**
 * **code/** submodules **ansible/**
@@ -70,11 +67,11 @@
 
 <!SLIDE command bullets small>
 
-# Infrastructure vs Project
+# Ansible - Project automation
 
-## Project
+## Git Repositories
 
-### Git Repositories
+### Code repository
 
 ![Code repository](/file/assets/code-repository.png)
 
@@ -82,11 +79,11 @@
 
 <!SLIDE command bullets small>
 
-# Infrastructure vs Project
+# Ansible - Project automation
 
-## Project
+## Git Repositories
 
-### Git Repositories
+### Ansible repository
 
 ![Ansible repository](/file/assets/ansible-repository.png)
 
@@ -94,11 +91,11 @@
 
 <!SLIDE command bullets small>
 
-# Infrastructure vs Project
+# Ansible - Project automation
 
-## Project
+## Git Repositories
 
-### Git Repositories
+### Project repository
 
 ![Project repository](/file/assets/project-repository.png)
 
@@ -106,11 +103,11 @@
 
 <!SLIDE command bullets small>
 
-# Infrastructure vs Project
+# Ansible - Project automation
 
-## Project
+## Git Repositories
 
-### Git Repositories
+### Big picture
 
 ![The complete project](/file/assets/project.png)
 
