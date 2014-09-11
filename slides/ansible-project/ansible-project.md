@@ -112,4 +112,10 @@
 ![The complete project](/file/assets/project.png)
 
 
+
+<!SLIDE discuss>
+
+/discuss
+
+
 <!-- vim: set nofen ts=4 sw=4 et: -->

@@ -115,3 +115,21 @@ a:hover {
   background-color: #FFFFFF;
   background-image: none;
 }
+
+
+.discuss {
+  background-color: #FFFFFF;
+  background-image: url(/image/assets/silpion-logo-green.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 90%;
+}
+
+.discuss .discuss {
+  background-image: none;
+}
+
+.content.discuss > p {
+  margin-top: 20px;
+  font-size: 120px;
+}
