@@ -1,2 +1,3 @@
 ---
+ansible_data_path: /tmp
 silpion_root_password: '$6$$424Wd1I7Zf08UNjZ87zCI7CqSLDPJsmYixRJnsyXsavYUWpikshjobn8rbFAWU6cx/CzBkuaSteiZKhQj/0ia0'
